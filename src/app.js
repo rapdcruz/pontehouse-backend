@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 });
 
 //Configurações
-app.set('port', process.env.SERVER_PORT || 5001); //Middlewares
+app.set('port', process.env.PORT || 5000); //Middlewares
 app.use(express.json());
 //Rotas
 
