@@ -33,8 +33,8 @@ app.set('port', process.env.PORT || 5000); //Middlewares
 app.use(express.json());
 //Rotas
 
-app.use('/', (req, res) => {
-  res.send("I'm Alive: "+new Date());
+app.use('/alive', (req, res) => {
+  res.send("I'm Alive: " + new Date());
 });
 
 app.use('/api/v1/authentication', authenticationRouter);
